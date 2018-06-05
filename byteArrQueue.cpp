@@ -100,7 +100,7 @@ int ByteArrQueue::push_many(const void *a, int len) {
 
 void *ByteArrQueue::get_front_ptr() {
     if (this->end < this->len) {
-        return (void *) ((char *) this->data_ptr + this->end);
+        return (char *) this->data_ptr + this->end;
     } else {
         return (char *) this->data_ptr + this->end - this->len;
     }

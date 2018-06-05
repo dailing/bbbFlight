@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+build
+.idea
+lsync.conf.lua
+*.log
+cmake-build-debug
